@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'www.cgv.vn',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'firebasestorage.googleapis.com',
+        port: '',
+        pathname: '/**',
       },
     ],
   },
