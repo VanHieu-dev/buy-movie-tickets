@@ -7,57 +7,62 @@ import {
   PartyPopper,
   ScreenShare,
   User,
+  MonitorPlay, // Icon mới cho loại phòng chiếu nhìn hợp hơn
+  Sofa, // Icon mới cho loại ghế
 } from 'lucide-react';
+
+// Set size mặc định cho icon
+const iconSize = 20; 
 
 export const navs = [
   {
     name: 'Thống kê',
     url: '/admin/statistical',
-    icon: <ChartNoAxesCombined />,
+    icon: <ChartNoAxesCombined size={iconSize} />,
   },
   {
     name: 'Quản lý phim',
     url: '/admin/movies',
-    icon: <Film />,
+    icon: <Film size={iconSize} />,
   },
   {
     name: 'Quản lý rạp',
     url: '/admin/cinemas',
-    icon: <Building />,
+    icon: <Building size={iconSize} />,
   },
   {
     name: 'Quản lý phòng chiếu',
     url: '/admin/screens',
-    icon: <ScreenShare />,
+    icon: <ScreenShare size={iconSize} />,
   },
   {
-    name: 'Quản lý loại phòng chiếu',
+    name: 'Loại phòng chiếu',
     url: '/admin/screen-types',
-    icon: <ScreenShare />,
+    icon: <MonitorPlay size={iconSize} />,
   },
   {
     name: 'Quản lý ghế',
     url: '/admin/seats',
-    icon: <Armchair />,
+    icon: <Armchair size={iconSize} />,
   },
   {
-    name: 'Quản lý loại ghế',
+    name: 'Loại ghế',
     url: '/admin/seats-types',
-    icon: <Armchair />,
+    icon: <Sofa size={iconSize} />,
   },
   {
     name: 'Quản lý suất chiếu',
     url: '/admin/showtimes',
-    icon: <CalendarDays />,
+    icon: <CalendarDays size={iconSize} />,
   },
   {
     name: 'Quản lý ngày lễ',
     url: '/admin/holidays',
-    icon: <PartyPopper />
+    icon: <PartyPopper size={iconSize} />
   },
   {
-    name: 'Quản lý user',
+    name: 'Quản lý User',
     url: '/admin/users',
-    icon: <User />,
+    icon: <User size={iconSize} />,
   },
 ];

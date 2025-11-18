@@ -4,6 +4,9 @@ export interface CustomJwtPayload extends JwtPayload {
   role?: string;
   email?: string;
   fullName?: string;
+  iss?: string;
+  sub?: string;
+  jti?: string;
   // Thêm các field khác tùy ý
 }
 
